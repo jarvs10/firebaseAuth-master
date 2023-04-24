@@ -6,11 +6,15 @@ import './index.css'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
 import AuthContextProvider from './context/AuthContextProvider.jsx'
+import ProtectedRoute from './components/ProtectedRoute.jsx'
 
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: 
+    <ProtectedRoute>
+      <App />
+    </ProtectedRoute>
   },
   {
     path: '/login',

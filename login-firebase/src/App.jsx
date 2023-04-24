@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import Layout from "./components/Layout"
 import { useAuth } from "./context/AuthContextProvider"
 
@@ -6,12 +5,8 @@ function App() {
 
   const { user, logout, loading } = useAuth();
 
-  const navigate = useNavigate();
-
   const handleLogout = async () => {
     await logout();
-
-    navigate('/login');
   }
 
   if(loading){

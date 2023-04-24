@@ -49,10 +49,10 @@ const Login = () => {
 
         <div className='mb-6'>
           <label className='block font-bold mb-1 text-lg' htmlFor="password">Password: </label>
-          <input onChange={handleData} className='border border-gray-400 w-full py-2 px-1 rounded-sm' type="password" name="password" id="password" placeholder='********' />
+          <input onChange={handleData} className='border border-gray-400 w-full py-2 px-1 rounded-sm' type="password" name="password" id="password" placeholder='********'/>
         </div>
 
-        <button className='py-2 w-full bg-slate-600 text-white hover:bg-slate-800 rounded-sm font-bold uppercase'>Register</button>
+        <button className='py-2 w-full bg-slate-600 text-white hover:bg-slate-800 rounded-sm font-bold uppercase'>Login</button>
         {error && <Alert>{error}</Alert>}
       </form>
     </Layout>
