@@ -37,7 +37,6 @@ const Login = () => {
     }
   }
 
-
   return (
     <Layout>
       <h1 className="text-5xl font-bold text-center mb-10">Login</h1>
