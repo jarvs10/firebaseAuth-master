@@ -26,7 +26,7 @@ const Register = () => {
 
     try {
       await singup(user.email, user.password);
-      navigate('/');
+      navigate('/login');
 
     } catch (error) {
       setError(error.message);
@@ -41,7 +41,7 @@ const Register = () => {
     <Layout>
       <h1 className="text-5xl font-bold text-center mb-10">Register</h1>
 
-      <form onSubmit={handleSubmit} className='mx-auto w-1/2 bg-white py-8 px-4 rounded-md'>
+      <form onSubmit={handleSubmit} className='mx-auto w-1/3 bg-white py-10 px-6 rounded-md'>
         <div className='mb-4'>
           <label className='block font-bold mb-1 text-lg' htmlFor="email">Email: </label>
           <input onChange={handleData} className='border border-gray-400 w-full py-2 px-1 rounded-sm' type="email" name="email" id="email" placeholder='Email@gmail.com' />
